@@ -50,7 +50,9 @@
   bottom: 0;
   padding: 0 0 30px 64px;
   margin: 0;
+  line-height: 25px;
   font-size: 18px;
+  font-weight: normal;
   z-index: 16;
 }
 
@@ -153,9 +155,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 100px;
+  padding: 60px  0 100px 0;
 }
-.table_heading {
+.table__heading {
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
@@ -163,6 +165,7 @@
 .table__cell {
   width: 250px;
   margin-top: 60px;
+  margin: 0;
 }
 
 .table__heading {
@@ -175,7 +178,7 @@
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  margin: 20px 0 0 0;
+  padding: 20px 0 0 0;
 }
 
 .feynman {
@@ -231,7 +234,7 @@
   overflow: hidden;
 }
 
-.table_cell_theme_dark {
+.table__cell_theme_dark {
   width: 200px;
   margin-top: 80px;
   z-index: 2;
@@ -266,27 +269,26 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.footer_author {
+.footer__author {
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
   margin: 0;
   padding-bottom: 18px;
 }
-.logo__place_footer {
+.logo_place_footer {
   position: revert;
 }
-.footer_column-link {
+.footer__column-links {
   list-style-type: none;
   margin: 0;
   padding: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-  text-decoration: none;
 }
 
-.footer_column-heading {
+.footer__column-heading {
   margin: 0;
   padding-bottom: 20px;
   line-height: 30px;
@@ -294,7 +296,9 @@
   font-weight: 600;
 }
 
-.footer_social-icon {
+.footer__social-icon {
   padding-right: 10px;
+  margin: 0;
   text-decoration: none;
+  color: #f2f2f2
 }

@@ -166,12 +166,6 @@
   padding: 0 0 100px 0;
 }
 
-.table__heading {
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: 600;
-}
-
 .table__cell {
   width: 250px;
   margin: 0;
@@ -251,16 +245,14 @@
   padding: 0;
   margin-bottom: 90px;
 }
-
-.section-title_theme_dark {
+.section-title__theme_dark {
   padding-top: 90px;
 }
-
 .table__cell_theme_dark {
   width: 200px;
   margin-top: 80px;
   z-index: 2;
-  padding: 0;
+  padding-top: 0;
 }
 
 .feufman_triangle {

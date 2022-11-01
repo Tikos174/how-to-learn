@@ -28,8 +28,11 @@
   top: 30px;
   left: 64px;
 }
+.header__link {
+  text-decoration: none;
+}
 
-.header_title {
+.header__title {
   width: 730px;
   padding-left: 64px;
   display: flex;
@@ -40,7 +43,7 @@
   z-index: 16;
 }
 
-.header_subtitle {
+.header__subtitle {
   width: 388px;
   position: absolute;
   left: 0;
@@ -51,7 +54,7 @@
   z-index: 16;
 }
 
-.header_main-illustration {
+.header__main-illustration {
   width: 765px;
   height: 608px;
   background-size: 100% 100%;
@@ -61,7 +64,7 @@
   z-index: 15;
 }
 
-.header_sqare-pic {
+.header__sqare-pic {
   background-color: #2f80ed;
   height: 568px;
   width: 568px;
@@ -79,7 +82,7 @@
   margin: 0 auto;
   padding: 100px 0 100px 0;
 }
-.two-columns_brief {
+.two-columns__brief {
   font-size: 18px;
   color: #2f80ed;
   line-height: 1.2;
@@ -87,13 +90,13 @@
   margin: 0;
   width: 175px;
 }
-.two-columns_main-text {
+.two-columns__main-text {
   width: 80%;
   min-width: 784px;
   margin: 0;
   padding: 0;
 }
-.two-columns_paragraph {
+.two-columns__paragraph {
   list-style-type: none;
   margin: 0;
   line-height: 34px;
@@ -101,10 +104,10 @@
   font-weight: normal;
   margin-bottom: 30px;
 }
-.two-columns_paragraph:last-child {
+.two-columns__paragraph:last-child {
   margin-bottom: 0;
 }
-.two-columns_span-accent {
+.two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
   font-weight: 600;
@@ -152,18 +155,23 @@
   justify-content: space-between;
   padding-bottom: 100px;
 }
-.table_cell {
+.table_heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+.table__cell {
   width: 250px;
   margin-top: 60px;
 }
 
-.table_heading {
+.table__heading {
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
   margin: 0;
 }
-.table_text {
+.table__text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -172,20 +180,17 @@
 
 .feynman {
   background-color: #f2f2f2;
+  background-image: url(../images/feynman.png);
+  background-repeat: no-repeat;
+  background-size: 867px 637px;
+  background-position: left bottom;
   margin: 0 auto;
   height: 890px;
   position: relative;
   z-index: 0;
 }
-.feynman_photo {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 867px;
-  height: 637px;
-  z-index: -1;
-}
-.feynman_title {
+
+.feynman__title {
   padding-top: 100px;
   width: 648px;
   text-align: center;
@@ -197,7 +202,7 @@
   font-weight: 600;
   z-index: 2;
 }
-.feynman_subtitle {
+.feynman__subtitle {
   padding-top: 70px;
   margin: 0 auto;
   display: flex;
@@ -207,7 +212,7 @@
   font-weight: normal;
   z-index: 2;
 }
-.feynman_link {
+.feynman__link {
   top: 50%;
   position: absolute;
   right: 48px;
@@ -216,16 +221,17 @@
   font-size: 36px;
   font-weight: normal;
   color: #2f80ed;
+  text-decoration: none;
 }
 
 .kaufman {
-  background-color: #000000;
+  background-color: #1f1f1f;
   color: white;
   position: relative;
   overflow: hidden;
 }
 
-.table .table_cell_theme_dark {
+.table_cell_theme_dark {
   width: 200px;
   margin-top: 80px;
   z-index: 2;
@@ -241,32 +247,34 @@
 
 .footer {
   min-height: 350px;
-  background-color: #000000;
+  background-color: #1f1f1f;
   color: #f2f2f2;
-  position: relative;
+  display: flex;
 }
 
-.footer_columns {
+.footer__columns {
   width: 90%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
   padding: 60px 0 40px 0;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
 }
-.logo_place_footer {
-  position: static;
-}
-.footer_columns_content_copyright {
-  margin: 0;
+
+.footer__columns_content_copyright {
   flex-basis: 711px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.footer_author {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+  padding-bottom: 18px;
+}
+.logo__place_footer {
+  position: revert;
 }
 .footer_column-link {
   list-style-type: none;
@@ -275,10 +283,9 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-}
-a {
   text-decoration: none;
 }
+
 .footer_column-heading {
   margin: 0;
   padding-bottom: 20px;
@@ -286,13 +293,8 @@ a {
   font-size: 18px;
   font-weight: 600;
 }
-.footer_author {
-  line-height: 25px;
-  font-size: 18px;
-  font-weight: normal;
-  margin: 0;
-}
+
 .footer_social-icon {
   padding-right: 10px;
-  padding: ;
+  text-decoration: none;
 }

@@ -78,7 +78,7 @@
   margin-top: 64px;
 }
 .description{
-  display: flex ;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -134,7 +134,7 @@
 
 /* и элемента с модификатором вида ключ-значение */
 .digits {
-  display: flex ;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -200,7 +200,7 @@
   margin: 0 auto;
   height: 890px;
   position: relative;
-  display: flex ;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -242,7 +242,7 @@
   color: white;
   position: relative;
   overflow: hidden;
-  display: flex ;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }

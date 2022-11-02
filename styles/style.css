@@ -37,6 +37,7 @@
   padding-left: 64px;
   display: flex;
   align-items: center;
+  margin: 0;
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
@@ -76,12 +77,17 @@
   z-index: 2;
   margin-top: 64px;
 }
+.description{
+  display: flex ;
+  flex-direction: column;
+  align-items: center;
+}
 
 .two-columns {
   width: 80%;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 0;
   padding: 100px 0 0 0;
 }
 
@@ -127,10 +133,14 @@
 }
 
 /* и элемента с модификатором вида ключ-значение */
-
+.digits {
+  display: flex ;
+  flex-direction: column;
+  align-items: center;
+}
 .section-title {
   width: 60%;
-  margin: 0 auto;
+  margin: 0;
   padding-top: 100px;
   display: flex;
   justify-content: center;
@@ -141,7 +151,7 @@
 
 .section-subtitle {
   width: 60%;
-  margin: 0 auto;
+  margin: 0;
   padding-top: 20px;
   font-size: 24px;
   font-weight: normal;
@@ -153,7 +163,7 @@
 .table {
   width: 1100px;
   list-style-type: none;
-  margin: 0 auto;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -190,15 +200,16 @@
   margin: 0 auto;
   height: 890px;
   position: relative;
+  display: flex ;
+  flex-direction: column;
+  align-items: center;
 }
 
 .feynman__title {
   padding-top: 100px;
   width: 648px;
   text-align: center;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
+  margin: 0;
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
@@ -207,9 +218,7 @@
 
 .feynman__subtitle {
   padding-top: 70px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
+  margin: 0;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -233,6 +242,9 @@
   color: white;
   position: relative;
   overflow: hidden;
+  display: flex ;
+  flex-direction: column;
+  align-items: center;
 }
 
 .table_theme_dark {
@@ -262,15 +274,18 @@
   min-height: 350px;
   background-color: #1f1f1f;
   color: #f2f2f2;
-  display: flex;
+  display: flex ;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .footer__columns {
   width: 90%;
   padding: 60px 0 40px 0;
-  margin: 0 auto;
+  margin: 0;
   display: flex;
   justify-content: space-between;
+
 }
 
 .footer__columns_content_copyright {
